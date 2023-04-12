@@ -24,3 +24,9 @@ a:hover{
   margin-right: 1rem;
 
 }
+
+.card-description{
+    font-size: small;
+    font-weight: lighter;
+
+  font-feature-settings: "smcp"}

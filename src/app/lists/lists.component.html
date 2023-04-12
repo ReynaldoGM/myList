@@ -5,16 +5,15 @@
         <div class="">
           <div class="card-header titleCard">
             <h5 class="card-title">{{record.name}}</h5>
+              <p class="card-text card-description">{{record.description}}</p>
           </div>
-          <div class="card-body">
-            <p class="card-text">{{record.description}}</p>
-          </div>
+
 
         </div>
         <ul class="list-group list-group-flush ">
           <li class="list-group-item cardItems">{{record.items[0]}}</li>
           <li class="list-group-item cardItems">{{record.items[1]}}</li>
-          <li class="list-group-item cardItems">{{record.items[3]}}</li>
+          <li class="list-group-item cardItems">{{record.items[2]}}</li>
           <li class="list-group-item cardItems"><a [routerLink]="['/detail',1,record.id]"  >Read More</a></li>
         </ul>
 

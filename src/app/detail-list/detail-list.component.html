@@ -1,15 +1,21 @@
-<div class="container-lg">
+<div class="container-lg d-flex justify-content-center py-3">
   <div class="card cardItems" style="width: 18rem">
     <div class="">
       <div class="card-header titleCard">
         <h5 class="card-title">{{record?.name}}</h5>
+          <p class="card-text card-description">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
       </div>
-      <div class="card-body">
-        <p class="card-text">{{record?.description}}</p>
-      </div>
+
     </div>
     <ul class="list-group list-group-flush ">
       <li class="list-group-item cardItems" *ngFor="let item of record?.items">{{item}}</li>
+      <li class="list-group-item cardItems">
+        <div class="d-flex justify-content-bwteen">
+          <input class="cardItems" type="text" name="" value="" placeholder="Add new item here">
+          <button class="add-button " type="button" name="button">+</button>
+        </div>
+
+      </li>
 
     </ul>
 

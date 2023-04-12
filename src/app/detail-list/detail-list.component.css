@@ -1,0 +1,42 @@
+h5 {
+  font-family: Roboto;
+}
+
+input{
+  border: none;
+  width: 90%;
+}
+
+input:focus{
+  outline: none;
+}
+
+.add-button{
+
+  border: none;
+  text-align: center;
+  font-size: 2rem;
+  background-color: #FEF8E0;
+  font-weight: lighter;
+}
+.add-button:hover {
+  color: #606C38;
+  font-weight: 600;
+}
+.titleCard {
+  background-color: #FCF09F;
+
+
+}
+
+.cardItems {
+  background-color: #FEF8E0;
+  color: #283618;
+}
+
+.card-description {
+  font-size: small;
+  font-weight: lighter;
+  font-feature-settings: "smcp";
+  font-family: Calibri;
+}
