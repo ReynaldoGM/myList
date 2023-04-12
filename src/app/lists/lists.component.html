@@ -1,0 +1,25 @@
+<div class="container-lg">
+  <div class="row g-3 justify-content-center">
+    <div *ngFor="let record of records" class="col-9 col-md-6 col-xl-4 ">
+      <div class="card cardItems" style="width: 18rem">
+        <div class="">
+          <div class="card-header titleCard">
+            <h5 class="card-title">{{record.name}}</h5>
+          </div>
+          <div class="card-body">
+            <p class="card-text">{{record.description}}</p>
+          </div>
+
+        </div>
+        <ul class="list-group list-group-flush ">
+          <li class="list-group-item cardItems">{{record.items[0]}}</li>
+          <li class="list-group-item cardItems">{{record.items[1]}}</li>
+          <li class="list-group-item cardItems">{{record.items[3]}}</li>
+          <li class="list-group-item cardItems"><a [routerLink]="['/detail',1,record.id]"  >Read More</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+</div>

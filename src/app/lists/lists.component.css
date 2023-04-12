@@ -1,0 +1,26 @@
+a{
+  color: #BC6C25;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #283618;
+}
+
+
+.titleCard{
+  background-color: #FCF09F;
+
+}
+
+.cardItems{
+  background-color: #FEF8E0;
+  color: #283618 ;
+}
+
+.cardBtn{
+  background-color:  #DDA15E;
+  color: #283618;
+  margin-right: 1rem;
+
+}

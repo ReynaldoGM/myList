@@ -1,0 +1,18 @@
+<div class="container-lg">
+  <div class="card cardItems" style="width: 18rem">
+    <div class="">
+      <div class="card-header titleCard">
+        <h5 class="card-title">{{record?.name}}</h5>
+      </div>
+      <div class="card-body">
+        <p class="card-text">{{record?.description}}</p>
+      </div>
+    </div>
+    <ul class="list-group list-group-flush ">
+      <li class="list-group-item cardItems" *ngFor="let item of record?.items">{{item}}</li>
+
+    </ul>
+
+  </div>
+
+</div>
