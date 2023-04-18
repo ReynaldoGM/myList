@@ -23,6 +23,17 @@ input:focus{
   color: #606C38;
   font-weight: 600;
 }
+
+.btn-save{
+    background-color: #8C9188;
+    color: white;
+    font-weight: 600;
+
+}
+.btn-save:hover{
+    background-color: #6D6C62;
+}
+
 .titleCard {
   background-color: #FCF09F;
 
@@ -39,4 +50,18 @@ input:focus{
   font-weight: lighter;
   font-feature-settings: "smcp";
   font-family: Calibri;
+}
+
+.btn-flaticon{
+  font-size: 1.3rem;
+}
+
+.list-group-item{
+  display: inline-flex;
+}
+
+@media (max-width: 400px) {
+  .btn-flaticon{
+    font-size: 1rem;
+  }
 }

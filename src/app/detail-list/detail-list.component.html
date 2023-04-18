@@ -1,24 +1,39 @@
 <div class="container-lg d-flex justify-content-center py-3">
-  <div class="card cardItems" style="width: 18rem">
-    <div class="">
-      <div class="card-header titleCard">
-        <h5 class="card-title">{{record?.name}}</h5>
-          <p class="card-text card-description">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+
+  <div class=" card cardItems" style="width: 25rem">
+
+    <div class="card-header titleCard">
+      <h5 class="card-title">{{record?.name}}</h5>
+      <p class="card-text card-description">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+    </div>
+    <ul class="list-group list-group-flush " style="width: 26.5rem">
+      <div class="container justify-content-bwteen" >
+        <li class="row list-item cardItems list-group-item w-100" *ngFor="let item of record?.items">
+          <div class="col-9 py-3">
+            {{item}}
+          </div>
+          <div class="col-3 py-3">
+            <i class="fi fi-rr-edit px-2 btn-flaticon"></i>
+            <i class="fi fi-rr-trash btn-flaticon"></i>
+          </div>
+
+        </li>
       </div>
 
-    </div>
-    <ul class="list-group list-group-flush ">
-      <li class="list-group-item cardItems" *ngFor="let item of record?.items">{{item}}</li>
-      <li class="list-group-item cardItems">
-        <div class="d-flex justify-content-bwteen">
+      <li class="list-group-item cardItems" style="width: 23rem">
+        <div class="container d-flex justify-content-bwteen">
           <input class="cardItems" type="text" name="" value="" placeholder="Add new item here">
           <button class="add-button " type="button" name="button">+</button>
         </div>
-
       </li>
-
     </ul>
-
+  </div>
+</div>
+<div class="container-lg d-flex justify-content-center">
+  <div class="row ">
+    <div class="col">
+      <button class="btn btn-save" type="button" name="button">Save</button>
+    </div>
   </div>
 
 </div>
