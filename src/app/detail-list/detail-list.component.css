@@ -34,6 +34,26 @@ input:focus{
     background-color: #6D6C62;
 }
 
+.btn-flaticon{
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.btn-flaticon-edit:hover{
+color: #606C38;
+}
+
+.btn-flaticon-delete:hover{
+color: red;
+}
+
+
+.btn-flaticon:hover{
+  font-weight: bolder;
+  font-size: 1.4rem;
+
+}
+
 .titleCard {
   background-color: #FCF09F;
 
@@ -46,15 +66,13 @@ input:focus{
 }
 
 .card-description {
-  font-size: small;
+  font-size: medium;
   font-weight: lighter;
   font-feature-settings: "smcp";
   font-family: Calibri;
 }
 
-.btn-flaticon{
-  font-size: 1.3rem;
-}
+
 
 .list-group-item{
   display: inline-flex;

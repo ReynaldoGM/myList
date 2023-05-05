@@ -4,26 +4,27 @@
 
     <div class="card-header titleCard">
       <h5 class="card-title">{{record?.name}}</h5>
-      <p class="card-text card-description">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+      <p class="card-text card-description">{{record?.description}}</p>
     </div>
     <ul class="list-group list-group-flush " style="width: 26.5rem">
       <div class="container justify-content-bwteen" >
         <li class="row list-item cardItems list-group-item w-100" *ngFor="let item of record?.items">
           <div class="col-9 py-3">
-            {{item}}
-          </div>
-          <div class="col-3 py-3">
-            <i class="fi fi-rr-edit px-2 btn-flaticon"></i>
-            <i class="fi fi-rr-trash btn-flaticon"></i>
-          </div>
+            <div  class="">
+                {{item}}
+            </div>
 
+          </div>
+          <div class="col-3 py-3 d-flex justify-content-center">
+            <i class="fi fi-rr-trash btn-flaticon btn-flaticon-delete" (click)="deleteItem(item)"></i>
+          </div>
         </li>
       </div>
 
       <li class="list-group-item cardItems" style="width: 23rem">
         <div class="container d-flex justify-content-bwteen">
-          <input class="cardItems" type="text" name="" value="" placeholder="Add new item here">
-          <button class="add-button " type="button" name="button">+</button>
+          <input [(ngModel)]="newItem"  class="cardItems" type="text" name="" value="" placeholder="Add new item here">
+          <button (click)="addItem()" class="add-button " type="button" name="button">+</button>
         </div>
       </li>
     </ul>
@@ -32,7 +33,7 @@
 <div class="container-lg d-flex justify-content-center">
   <div class="row ">
     <div class="col">
-      <button class="btn btn-save" type="button" name="button">Save</button>
+      <button *ngIf="changesMade" [disabled]="!changesMade"  class="btn btn-save" type="button" name="button" (click)="saveRecord()">Save</button>
     </div>
   </div>
 
